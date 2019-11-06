@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "770df612-d330-42ad-a660-f4c8edd55497",
+		"name": "rest-api-mongoose",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/accounts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"account 1\",\n\t\"balance\": 200\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/accounts/5dc2102c26617bdc7faca0b7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/accounts/5dc2102c26617bdc7faca0b7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"5dc2102c26617bdc7faca0b7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/accounts/5dc2102c26617bdc7faca0b7",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"update name attribute\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/accounts/5dc2102c26617bdc7faca0b7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"5dc2102c26617bdc7faca0b7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/accounts/5dc2102c26617bdc7faca0b7",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/accounts/5dc2102c26617bdc7faca0b7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"5dc2102c26617bdc7faca0b7"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
